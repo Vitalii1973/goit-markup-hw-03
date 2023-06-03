@@ -1,0 +1,356 @@
+:root {
+  --color-iris: #4d5ae5;
+  --color-ocean: #404bbf;
+  --color-green: #31d0aa;
+  --color-slate: #434455;
+  --color-light-slate: #8e8f99;
+  --color-cornflower: #e7e9fc;
+  --color-cloud: #f4f4fd;
+  --color-grey: #2e2f42;
+  --color-white: #ffffff;
+  --color-dairy: #fcfcfc;
+}
+
+/** Базовий стиль */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: var(--color-grey);
+  color: var(--color-slate);
+  background-color: var(--color-white);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+.header {
+  background-color: var(--color-white);
+}
+/**Оформлення логотипу */
+.style {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 1.17;
+  color: var(--color-iris);
+  letter-spacing: 0.03em;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/** друга частина логотипу */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--color-grey);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/** Логотип Studio у футері */
+.logo-footer {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 1.17;
+  color: var(--color-cloud);
+  letter-spacing: 0.03em;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/** Меню навігації-посилання */
+
+.menu {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+}
+.menu-item {
+}
+.header-menu {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-grey);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.header-menu:hover,
+.header-menu:focus {
+  color: var(--color-ocean);
+}
+.header-menu:active {
+  color: var(--color-white);
+  background-color: var(--color-ocean);
+}
+/** Контакті */
+.address {
+  font-style: normal;
+}
+.address-contact {
+}
+.address-item {
+}
+.contact {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-slate);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.contact:hover,
+.contact:focus {
+  color: var(--color-ocean);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/** Баннер секція 1 */
+.hero {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+/** Заливка банера */
+.banner-hero {
+  background-color: var(--color-grey);
+}
+/** Текст банера */
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--color-white);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/** Кнопка банера */
+.hero-btn {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--color-white);
+  background-color: var(--color-iris);
+  cursor: pointer;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.04em;
+  color: var(--color-white);
+  background-color: var(--color-ocean);
+}
+.hero-btn:active {
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--color-white);
+  background-color: var(--color-ocean);
+}
+/** Секція 2 Бенефис */
+.benefits {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.benefits-list {
+}
+.benefits-item {
+}
+.benefits-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--color-grey);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.benefits-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-slate);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/** Секція 3 digital */
+.digital {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.digital-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--color-grey);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.digital-list {
+}
+.digital-item {
+}
+/** Секція 4 Команда */
+.team {
+  background-color: var(--color-cloud);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.team-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--color-grey);
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.team-list {
+}
+.team-item {
+  background-color: var(--color-white);
+}
+.team-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--color-grey);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.team-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-slate);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/** Абзац у футері */
+.footer {
+  background-color: var(--color-grey);
+}
+
+.footer-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-cloud);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/*? Сторінка Портфоліо */
+
+/*? Шапка портфоліо */
+.portfolio-line {
+  background-color: var(--color-white);
+}
+.portfolio-nav {
+}
+/*? Логотип портфоліо */
+.portfolio-style {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 1.17;
+  color: var(--color-iris);
+  letter-spacing: 0.03em;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.portfolio-menu {
+}
+.portfolio-menu-item {
+}
+.portfolio-header-menu {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-grey);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.portfolio-header-menu:hover,
+.portfolio-header-menu:focus {
+  color: var(--color-ocean);
+}
+.portfolio-header-menu:active {
+  color: var(--color-white);
+  background-color: var(--color-ocean);
+}
+
+/*? Секція 1 Кнопки портфоліо */
+.portfolio-hero {
+}
+.portfolio-list {
+}
+.portfolio-item {
+}
+.portfolio-btn {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-iris);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--color-cloud);
+
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: var(--color-white);
+  background-color: var(--color-ocean);
+  cursor: pointer;
+}
+.portfolio-btn:active {
+  color: var(--color-white);
+  background-color: var(--color-ocean);
+
+  cursor: pointer;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/*? Секція 2 Реклама Портфоліо*/
+.advertising {
+}
+.visually-hidden {
+}
+.advertising-list {
+}
+.advertising-item {
+  background-color: var(--color-white);
+}
+.advertising-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--color-grey);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.advertising-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-slate);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/*? Секція 3 Сервіс портфоліо */
+
+/*? Секція 4 features портфоліо */
