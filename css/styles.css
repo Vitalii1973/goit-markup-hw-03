@@ -11,6 +11,19 @@
   --color-dairy: #fcfcfc;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /** Базовий стиль */
 body {
   font-family: 'Roboto', sans-serif;
@@ -20,6 +33,44 @@ body {
   background-color: var(--color-white);
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  gap: 40px;
+}
+
+img {
+  display: flex;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100px;
+  min-width: 1440px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 156px;
+  padding-right: 156px;
+  align-items: center;
+}
 .link {
   text-decoration: none;
 }
@@ -27,8 +78,15 @@ body {
 .list {
   list-style: none;
 }
+
 .header {
   background-color: var(--color-white);
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.navigation {
+  display: flex;
+  align-items: center;
 }
 /**Оформлення логотипу */
 .style {
@@ -38,6 +96,7 @@ body {
   text-transform: uppercase;
   font-weight: 800;
   line-height: 1.17;
+
   color: var(--color-iris);
   letter-spacing: 0.03em;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -71,6 +130,10 @@ body {
 .menu {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 0 76px;
 }
 .menu-item {
 }
@@ -96,7 +159,11 @@ body {
   font-style: normal;
 }
 .address-contact {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
+
 .address-item {
 }
 .contact {
@@ -120,6 +187,14 @@ body {
 }
 /** Заливка банера */
 .banner-hero {
+  min-height: 600px;
+}
+
+.hero-container {
+  width: 1440px;
+
+  left: 0px;
+  top: 72px;
   background-color: var(--color-grey);
 }
 /** Текст банера */
@@ -129,6 +204,10 @@ body {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
+  max-width: 496px;
+  margin: 0 auto;
+  padding-top: 188px;
+  padding-bottom: 188px;
   color: var(--color-white);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -140,6 +219,11 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px 32px;
+  gap: 10px;
   color: var(--color-white);
   background-color: var(--color-iris);
   cursor: pointer;
@@ -164,8 +248,19 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .benefits-list {
+  display: flex;
+  min-width: 1128px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  margin: 0 156px;
 }
 .benefits-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: calc((100-72px) / 4);
+  padding: 0px;
+  gap: 8px;
 }
 .benefits-subtitle {
   font-weight: 500;
@@ -174,6 +269,9 @@ body {
   letter-spacing: 0.02em;
   color: var(--color-grey);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 .benefits-text {
   font-size: 16px;
@@ -181,10 +279,19 @@ body {
   letter-spacing: 0.02em;
   color: var(--color-slate);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 /** Секція 3 digital */
 .digital {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.container-digital {
+  display: block;
+  padding-bottom: 120px;
+  margin: 0 auto;
 }
 .digital-title {
   font-weight: 700;
@@ -192,11 +299,18 @@ body {
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
+  margin-bottom: 72px;
   text-transform: capitalize;
   color: var(--color-grey);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .digital-list {
+  display: flex;
+  width: calc((100%-48) / 3);
+  align-items: center;
+  gap: 24px;
+
+  padding: 0 156px;
 }
 .digital-item {
 }
@@ -253,6 +367,8 @@ body {
 
 /*? Шапка портфоліо */
 .portfolio-line {
+  padding-top: 24px;
+  padding-bottom: 24px;
   background-color: var(--color-white);
 }
 .portfolio-nav {
@@ -294,6 +410,8 @@ body {
 }
 
 /*? Секція 1 Кнопки портфоліо */
+.portfolio-container {
+}
 .portfolio-hero {
 }
 .portfolio-list {
@@ -309,7 +427,13 @@ body {
   color: var(--color-iris);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: var(--color-cloud);
-
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
   text-align: center;
   letter-spacing: 0.04em;
 }
@@ -332,10 +456,20 @@ body {
 .visually-hidden {
 }
 .advertising-list {
+  display: block;
+  column-gap: 24px;
 }
 .advertising-item {
+  width: calc((100%-48px) / 3);
   background-color: var(--color-white);
 }
+
+.advertising-portfolio {
+  padding: 32px 16px;
+  border: 1px solid var(--color-cornflower);
+  border-top: none;
+}
+
 .advertising-subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -343,6 +477,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--color-grey);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 8px;
 }
 .advertising-text {
   font-size: 16px;

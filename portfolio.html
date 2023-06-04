@@ -11,69 +11,78 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Head_Portfolio -->
     <header class="portfolio-line">
       <!-- Logotype -->
-      <nav class="portfolio-nav">
-        <a class="portfolio-style link" href="./index.html"
-          >Web<span class="logo link">Studio</span></a
-        >
-        <!-- Menu navigation -->
-        <ul class="portfolio-menu list">
-          <li class="portfolio-menu-item">
-            <a class="portfolio-header-menu link" href="./index.html">Studio</a>
-          </li>
-          <li class="portfolio-menu-item">
-            <a class="portfolio-header-menu link" href="./portfolio.html"
-              >Portfolio</a
-            >
-          </li>
-          <li class="portfolio-menu-item">
-            <a class="portfolio-header-menu link" href="">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- Contacts -->
-      <address class="address">
-        <ul class="address-contact list">
-          <li class="address-item">
-            <a class="contact link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="address-item">
-            <a class="contact link" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
-      </address>
+      <div class="container header-container">
+        <nav class="navigation">
+          <a class="style link" href="./index.html"
+            >Web<span class="logo link">Studio</span></a
+          >
+          <!-- Menu navigation -->
+          <ul class="menu list">
+            <li class="menu-item">
+              <a class="header-menu link" href="./index.html">Studio</a>
+            </li>
+            <li class="menu-item">
+              <a class="header-menu link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="menu-item">
+              <a class="header-menu link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Contacts -->
+        <address class="address">
+          <ul class="address-contact list">
+            <li class="address-item">
+              <a class="contact link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="address-item">
+              <a class="contact link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
     <!-- Filter Portfolio  -->
     <main class="portfolio-hero">
       <!-- Section_1_Portfolio-button -->
       <section class="advertising">
-        <h1 hidden>portfolio</h1>
-        <ul class="portfolio-list list">
-          <li class="portfolio-item">
-            <button type="button" class="portfolio-btn">All</button>
-          </li>
-          <li class="portfolio-item">
-            <button type="button" class="portfolio-btn">Web Site</button>
-          </li>
-          <li class="portfolio-item">
-            <button type="button" class="portfolio-btn">App</button>
-          </li>
-          <li class="portfolio-item">
-            <button type="button" class="portfolio-btn">Design</button>
-          </li>
-          <li class="portfolio-item">
-            <button type="button" class="portfolio-btn">Marketing</button>
-          </li>
-        </ul>
+        <div class="container portfolio-container">
+          <h1 class="visually-hidden">portfolio</h1>
+          <ul class="portfolio-list list">
+            <li class="portfolio-item">
+              <button type="button" class="portfolio-btn">All</button>
+            </li>
+            <li class="portfolio-item">
+              <button type="button" class="portfolio-btn">Web Site</button>
+            </li>
+            <li class="portfolio-item">
+              <button type="button" class="portfolio-btn">App</button>
+            </li>
+            <li class="portfolio-item">
+              <button type="button" class="portfolio-btn">Design</button>
+            </li>
+            <li class="portfolio-item">
+              <button type="button" class="portfolio-btn">Marketing</button>
+            </li>
+          </ul>
+        </div>
         <!-- Section_2_Portfolio -->
         <ul class="advertising-list list">
           <li class="advertising-item">
@@ -84,10 +93,13 @@
                 width="360"
                 height="300"
               />
-              <h2 class="advertising-subtitle">
-                Banking App Interface Concept
-              </h2>
-              <p class="advertising-text">App</p>
+
+              <div class="advertising-portfolio">
+                <h2 class="advertising-subtitle">
+                  Banking App Interface Concept
+                </h2>
+                <p class="advertising-text">App</p>
+              </div>
             </a>
           </li>
           <li class="advertising-item">
@@ -98,8 +110,10 @@
                 width="360"
                 height="300"
               />
-              <h2 class="advertising-subtitle">Cashless Payment</h2>
-              <p class="advertising-text">Marketing</p>
+              <div class="advertising-portfolio">
+                <h2 class="advertising-subtitle">Cashless Payment</h2>
+                <p class="advertising-text">Marketing</p>
+              </div>
             </a>
           </li>
           <li class="advertising-item">
@@ -110,8 +124,10 @@
                 width="360"
                 height="300"
               />
-              <h2 class="advertising-subtitle">Meditation App</h2>
-              <p class="advertising-text">App</p>
+              <div class="advertising-portfolio">
+                <h2 class="advertising-subtitle">Meditation App</h2>
+                <p class="advertising-text">App</p>
+              </div>
             </a>
           </li>
 
@@ -125,8 +141,10 @@
                 width="360"
                 height="300"
               />
-              <h2 class="advertising-subtitle">Taxi Service</h2>
-              <p class="advertising-text">Marketing</p></a
+              <div class="advertising-portfolio">
+                <h2 class="advertising-subtitle">Taxi Service</h2>
+                <p class="advertising-text">Marketing</p>
+              </div></a
             >
           </li>
           <li class="advertising-item">
@@ -137,8 +155,10 @@
                 width="360"
                 height="300"
               />
-              <h2 class="advertising-subtitle">Screen Illustrations</h2>
-              <p class="advertising-text">Design</p></a
+              <div class="advertising-portfolio">
+                <h2 class="advertising-subtitle">Screen Illustrations</h2>
+                <p class="advertising-text">Design</p>
+              </div></a
             >
           </li>
           <li class="advertising-item">
@@ -149,8 +169,10 @@
                 width="360"
                 height="300"
               />
-              <h2 class="advertising-subtitle">Online Courses</h2>
-              <p class="advertising-text">Marketing</p></a
+              <div class="advertising-portfolio">
+                <h2 class="advertising-subtitle">Online Courses</h2>
+                <p class="advertising-text">Marketing</p>
+              </div></a
             >
           </li>
 
@@ -164,8 +186,10 @@
                 width="360"
                 height="300"
               />
-              <h2 class="advertising-subtitle">Instagram Stories Concept</h2>
-              <p class="advertising-text">Design</p></a
+              <div class="advertising-portfolio">
+                <h2 class="advertising-subtitle">Instagram Stories Concept</h2>
+                <p class="advertising-text">Design</p>
+              </div></a
             >
           </li>
           <li class="advertising-item">
@@ -176,8 +200,10 @@
                 width="360"
                 height="300"
               />
-              <h2 class="advertising-subtitle">Organic Food</h2>
-              <p class="advertising-text">Web Site</p></a
+              <div class="advertising-portfolio">
+                <h2 class="advertising-subtitle">Organic Food</h2>
+                <p class="advertising-text">Web Site</p>
+              </div></a
             >
           </li>
           <li class="advertising-item">
@@ -188,8 +214,10 @@
                 width="360"
                 height="300"
               />
-              <h2 class="advertising-subtitle">Fresh Coffee</h2>
-              <p class="advertising-text">Web Site</p></a
+              <div class="advertising-portfolio">
+                <h2 class="advertising-subtitle">Fresh Coffee</h2>
+                <p class="advertising-text">Web Site</p>
+              </div></a
             >
           </li>
         </ul>
