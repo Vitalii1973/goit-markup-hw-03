@@ -484,6 +484,8 @@ img {
 }
 
 .advertising-item {
+  padding-left: 0;
+  margin: 0;
   background-color: var(--color-white);
   width: calc((100%-48px) / 3);
 }
