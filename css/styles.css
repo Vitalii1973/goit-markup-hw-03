@@ -255,7 +255,6 @@ img {
 .benefits-list {
   display: flex;
   min-width: 1128px;
-  margin: 0 156px;
 }
 .benefits-item {
   width: calc((100%-72px) / 4);
