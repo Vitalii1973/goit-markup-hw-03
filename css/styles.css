@@ -60,8 +60,7 @@ img {
 .container {
   width: 100px;
   min-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 .header-container {
@@ -265,12 +264,13 @@ img {
   padding-bottom: 120px;
   margin: 0 156px;
   gap: 24px;
+  width: calc((100%-72px) / 4);
 }
 .benefits-item {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: calc((100%-72px) / 4);
+
   padding: 0px;
   gap: 8px;
 }
@@ -322,9 +322,9 @@ img {
   align-items: center;
   gap: 24px;
   padding: 0 156px;
+  width: calc((100%-48) / 3);
 }
 .digital-item {
-  width: calc((100%-48) / 3);
 }
 /** Секція 4 Команда */
 .team {
@@ -410,6 +410,8 @@ img {
   background-color: var(--color-white);
 }
 .portfolio-nav {
+  display: flex;
+  align-items: center;
 }
 /*? Логотип портфоліо */
 .portfolio-style {
@@ -419,13 +421,17 @@ img {
   text-transform: uppercase;
   font-weight: 800;
   line-height: 1.17;
+  margin-right: 76px;
   color: var(--color-iris);
   letter-spacing: 0.03em;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .portfolio-menu {
+  display: flex;
+  gap: 40px;
 }
 .portfolio-menu-item {
+  padding: 24px 0;
 }
 .portfolio-header-menu {
   font-family: 'Roboto', sans-serif;
@@ -502,14 +508,15 @@ img {
 }
 
 .advertising-list {
-  display: flex;
   flex-wrap: wrap;
   display: block;
   column-gap: 24px;
   row-gap: 48px;
+  width: calc((100%-48px) / 3);
 }
 .advertising-item {
   width: calc((100%-48px) / 3);
+  display: flex;
   background-color: var(--color-white);
 }
 
