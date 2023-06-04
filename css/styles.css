@@ -128,9 +128,9 @@ img {
   gap: 40px;
 }
 .menu-item {
-  padding: 24px 0;
 }
 .header-menu {
+  padding: 24px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -484,8 +484,8 @@ img {
 }
 
 .advertising-item {
-  width: calc((100%-48px) / 3);
   background-color: var(--color-white);
+  width: calc((100%-48px) / 3);
 }
 
 .advertising-portfolio {
